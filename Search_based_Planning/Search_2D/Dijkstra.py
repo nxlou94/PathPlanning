@@ -62,6 +62,7 @@ def main():
     plot = plotting.Plotting(s_start, s_goal)
 
     path, visited = dijkstra.searching()
+    print(len(visited))
     plot.animation(path, visited, "Dijkstra's")  # animation generate
 
 

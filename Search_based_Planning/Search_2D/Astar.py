@@ -51,7 +51,8 @@ class AStar:
             if s == self.s_goal:  # stop condition
                 break
 
-            for s_n in self.get_neighbor(s):
+            for s_n in (x for x in self.get_neighbor(s) if x not in self.CLOSED): # don't open closed nodes again
+            # for s_n in self.get_neighbor(s): # open closed nodes if it has lower f_value
                 new_cost = self.g[s] + self.cost(s, s_n)
 
                 if s_n not in self.g:
@@ -60,7 +61,8 @@ class AStar:
                 if new_cost < self.g[s_n]:  # conditions for updating Cost
                     self.g[s_n] = new_cost
                     self.PARENT[s_n] = s
-                    heapq.heappush(self.OPEN, (self.f_value(s_n), s_n))
+                    if s_n not in (s[1] for s in self.OPEN): heapq.heappush(self.OPEN, (self.f_value(s_n), s_n))
+                    # heapq.heappush(self.OPEN, (self.f_value(s_n), s_n))
 
         return self.extract_path(self.PARENT), self.CLOSED
 
@@ -203,18 +205,35 @@ class AStar:
 
         if heuristic_type == "manhattan":
             return abs(goal[0] - s[0]) + abs(goal[1] - s[1])
-        else:
+        elif heuristic_type == "euclidean":
             return math.hypot(goal[0] - s[0], goal[1] - s[1])
+        elif heuristic_type == "diagonal":
+            mn = min(abs(goal[0] - s[0]), abs(goal[1] - s[1]))
+            mx = max(abs(goal[0] - s[0]), abs(goal[1] - s[1]))
+            return math.sqrt(2) * mn + (mx - mn)
+        elif heuristic_type == "nxlou":
+            i = 0
+            if i == 0:
+                mn = min(abs(goal[0] - s[0]), abs(goal[1] - s[1]))
+                mx = max(abs(goal[0] - s[0]), abs(goal[1] - s[1]))
+                return (math.sqrt(2) * mn + (mx - mn)) ** 1
+            elif i == 1: # messing up
+                return -50 * s[1]
+                return -10 * s[1] -2 * s[0]
+                return math.hypot(s[0] -25, s[1] - 15)*-8
+        else:
+            return 0
 
 
 def main():
-    s_start = (5, 5)
-    s_goal = (45, 25)
+    s_start = (15, 5) # (5, 5)
+    s_goal = (45, 1) # (45, 25)
 
     astar = AStar(s_start, s_goal, "euclidean")
     plot = plotting.Plotting(s_start, s_goal)
 
     path, visited = astar.searching()
+    print(len(visited))
     plot.animation(path, visited, "A*")  # animation
 
     # path, visited = astar.searching_repeated_astar(2.5)               # initial weight e = 2.5
