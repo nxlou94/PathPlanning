@@ -39,8 +39,8 @@ Directory Structure
 <div align=right>
 <table>
   <tr>
-    <td><img src="https://github.com/zhm-real/path-planning-algorithms/blob/master/Search_based_Planning/gif/BF.gif" alt="dfs" width="400"/></a></td>
-    <td><img src="https://github.com/zhm-real/path-planning-algorithms/blob/master/Search_based_Planning/gif/Dijkstra.gif" alt="dijkstra" width="400"/></a></td>
+    <td><img src="Search_based_Planning/gif/BF.gif" alt="dfs" width="400"/></a></td>
+    <td><img src="Search_based_Planning/gif/Dijkstra.gif" alt="dijkstra" width="400"/></a></td>
   </tr>
 </table>
 </div>
@@ -49,32 +49,32 @@ Directory Structure
 <div align=right>
 <table>
   <tr>
-    <td><img src="https://github.com/zhm-real/path-planning-algorithms/blob/master/Search_based_Planning/gif/Astar.gif" alt="astar" width="400"/></a></td>
-    <td><img src="https://github.com/zhm-real/path-planning-algorithms/blob/master/Search_based_Planning/gif/Bi-Astar.gif" alt="biastar" width="400"/></a></td>
+    <td><img src="Search_based_Planning/gif/Astar.gif" alt="astar" width="400"/></a></td>
+    <td><img src="Search_based_Planning/gif/Bi-Astar.gif" alt="biastar" width="400"/></a></td>
   </tr>
 </table>
 <table>
   <tr>
-    <td><img src="https://github.com/zhm-real/path-planning-algorithms/blob/master/Search_based_Planning/gif/RepeatedA_star.gif" alt="repeatedastar" width="400"/></a></td>
-    <td><img src="https://github.com/zhm-real/path-planning-algorithms/blob/master/Search_based_Planning/gif/ARA_star.gif" alt="arastar" width="400"/></a></td>
+    <td><img src="Search_based_Planning/gif/RepeatedA_star.gif" alt="repeatedastar" width="400"/></a></td>
+    <td><img src="Search_based_Planning/gif/ARA_star.gif" alt="arastar" width="400"/></a></td>
   </tr>
 </table>
 <table>
   <tr>
-    <td><img src="https://github.com/zhm-real/path-planning-algorithms/blob/master/Search_based_Planning/gif/LRTA_star.gif" alt="lrtastar" width="400"/></a></td>
-    <td><img src="https://github.com/zhm-real/path-planning-algorithms/blob/master/Search_based_Planning/gif/RTAA_star.gif" alt="rtaastar" width="400"/></a></td>
+    <td><img src="Search_based_Planning/gif/LRTA_star.gif" alt="lrtastar" width="400"/></a></td>
+    <td><img src="Search_based_Planning/gif/RTAA_star.gif" alt="rtaastar" width="400"/></a></td>
   </tr>
 </table>
 <table>
   <tr>
-    <td><img src="https://github.com/zhm-real/path-planning-algorithms/blob/master/Search_based_Planning/gif/D_star.gif" alt="lpastar" width="400"/></a></td>
-    <td><img src="https://github.com/zhm-real/path-planning-algorithms/blob/master/Search_based_Planning/gif/LPAstar.gif" alt="dstarlite" width="400"/></a></td>
+    <td><img src="Search_based_Planning/gif/D_star.gif" alt="lpastar" width="400"/></a></td>
+    <td><img src="Search_based_Planning/gif/LPAstar.gif" alt="dstarlite" width="400"/></a></td>
   </tr>
 </table>
 <table>
   <tr>
-    <td><img src="https://github.com/zhm-real/path-planning-algorithms/blob/master/Search_based_Planning/gif/ADstar_small.gif" alt="lpastar" width="400"/></a></td>
-    <td><img src="https://github.com/zhm-real/path-planning-algorithms/blob/master/Search_based_Planning/gif/ADstar_sig.gif" alt="dstarlite" width="400"/></a></td>
+    <td><img src="Search_based_Planning/gif/ADstar_small.gif" alt="lpastar" width="400"/></a></td>
+    <td><img src="Search_based_Planning/gif/ADstar_sig.gif" alt="dstarlite" width="400"/></a></td>
   </tr>
 </table>
 </div>
@@ -84,32 +84,32 @@ Directory Structure
 <div align=right>
 <table>
   <tr>
-    <td><img src="https://github.com/zhm-real/PathPlanning/blob/master/Sampling_based_Planning/gif/RRT_2D.gif" alt="value iteration" width="400"/></a></td>
-    <td><img src="https://github.com/zhm-real/PathPlanning/blob/master/Sampling_based_Planning/gif/Goal_biasd_RRT_2D.gif" alt="value iteration" width="400"/></a></td>
+    <td><img src="Sampling_based_Planning/gif/RRT_2D.gif" alt="value iteration" width="400"/></a></td>
+    <td><img src="Sampling_based_Planning/gif/Goal_biasd_RRT_2D.gif" alt="value iteration" width="400"/></a></td>
   </tr>
 </table>
 <table>
   <tr>
-    <td><img src="https://github.com/zhm-real/PathPlanning/blob/master/Sampling_based_Planning/gif/RRT_CONNECT_2D.gif" alt="value iteration" width="400"/></a></td>
-    <td><img src="https://github.com/zhm-real/PathPlanning/blob/master/Sampling_based_Planning/gif/Extended_RRT_2D.gif" alt="value iteration" width="400"/></a></td>
+    <td><img src="Sampling_based_Planning/gif/RRT_CONNECT_2D.gif" alt="value iteration" width="400"/></a></td>
+    <td><img src="Sampling_based_Planning/gif/Extended_RRT_2D.gif" alt="value iteration" width="400"/></a></td>
   </tr>
 </table>
 <table>
   <tr>
-    <td><img src="https://github.com/zhm-real/PathPlanning/blob/master/Sampling_based_Planning/gif/Dynamic_RRT_2D.gif" alt="value iteration" width="400"/></a></td>
-    <td><img src="https://github.com/zhm-real/PathPlanning/blob/master/Sampling_based_Planning/gif/RRT_STAR2_2D.gif" alt="value iteration" width="400"/></a></td>
+    <td><img src="Sampling_based_Planning/gif/Dynamic_RRT_2D.gif" alt="value iteration" width="400"/></a></td>
+    <td><img src="Sampling_based_Planning/gif/RRT_STAR2_2D.gif" alt="value iteration" width="400"/></a></td>
   </tr>
 </table>
 <table>
   <tr>
-    <td><img src="https://github.com/zhm-real/PathPlanning/blob/master/Sampling_based_Planning/gif/RRT_STAR_SMART_2D.gif" alt="value iteration" width="400"/></a></td>
-    <td><img src="https://github.com/zhm-real/PathPlanning/blob/master/Sampling_based_Planning/gif/FMT.gif" alt="value iteration" width="400"/></a></td>
+    <td><img src="Sampling_based_Planning/gif/RRT_STAR_SMART_2D.gif" alt="value iteration" width="400"/></a></td>
+    <td><img src="Sampling_based_Planning/gif/FMT.gif" alt="value iteration" width="400"/></a></td>
   </tr>
 </table>
 <table>
   <tr>
-    <td><img src="https://github.com/zhm-real/PathPlanning/blob/master/Sampling_based_Planning/gif/INFORMED_RRT_STAR_2D3.gif" alt="value iteration" width="400"/></a></td>
-    <td><img src="https://github.com/zhm-real/PathPlanning/blob/master/Sampling_based_Planning/gif/BIT2.gif" alt="value iteration" width="400"/></a></td>
+    <td><img src="Sampling_based_Planning/gif/INFORMED_RRT_STAR_2D3.gif" alt="value iteration" width="400"/></a></td>
+    <td><img src="Sampling_based_Planning/gif/BIT2.gif" alt="value iteration" width="400"/></a></td>
   </tr>
 </table>
 </div>
