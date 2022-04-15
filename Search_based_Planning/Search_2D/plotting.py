@@ -82,7 +82,7 @@ class Plotting:
 
         for x in visited:
             count += 1
-            plt.plot(x[0], x[1], color=cl, marker='o')
+            plt.plot(x[0], x[1], color=cl, marker='o', alpha=0.5)
             plt.gcf().canvas.mpl_connect('key_release_event',
                                          lambda event: [exit(0) if event.key == 'escape' else None])
 

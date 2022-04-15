@@ -51,8 +51,8 @@ class AStar:
             if s == self.s_goal:  # stop condition
                 break
 
-            for s_n in (x for x in self.get_neighbor(s) if x not in self.CLOSED): # don't open closed nodes again
             # for s_n in self.get_neighbor(s): # open closed nodes if it has lower f_value
+            for s_n in (x for x in self.get_neighbor(s) if x not in self.CLOSED): # don't open closed nodes again
                 new_cost = self.g[s] + self.cost(s, s_n)
 
                 if s_n not in self.g:
@@ -61,8 +61,8 @@ class AStar:
                 if new_cost < self.g[s_n]:  # conditions for updating Cost
                     self.g[s_n] = new_cost
                     self.PARENT[s_n] = s
-                    if s_n not in (s[1] for s in self.OPEN): heapq.heappush(self.OPEN, (self.f_value(s_n), s_n))
                     # heapq.heappush(self.OPEN, (self.f_value(s_n), s_n))
+                    if s_n not in (s[1] for s in self.OPEN): heapq.heappush(self.OPEN, (self.f_value(s_n), s_n))
 
         return self.extract_path(self.PARENT), self.CLOSED
 
@@ -229,7 +229,7 @@ def main():
     s_start = (15, 5) # (5, 5)
     s_goal = (45, 1) # (45, 25)
 
-    astar = AStar(s_start, s_goal, "euclidean")
+    astar = AStar(s_start, s_goal, "diagonal")
     plot = plotting.Plotting(s_start, s_goal)
 
     path, visited = astar.searching()
